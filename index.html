@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="app">
+
+    <header class="head">
+      <img src="data:image/png;base64,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" width="45px">
+      <h1>Expense Tracker</h1>
+      <input id="dashMonth" class="month" type="month">
+      <button class="add" id="transadd">＋ Add Transaction</button>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <span class="label">Current Balance</span>
+        <div class="value blue" id="balance">₹0</div>
+        <span class="muted" id="balanceNote"></span>
+      </div>
+      <div class="card">
+        <span class="label">Total Income</span>
+        <div class="value green" id="income">₹0</div>
+       
+      </div>
+      <div class="card">
+        <span class="label">Total Expenses</span>
+        <div class="value red" id="expense">₹0</div>
+      
+      </div>
+</section>
+    <section class="insights-grid" >
+
+    <article class="panel monthly-panel">
+
+        <div class="panel-heading">
+
+            <div>
+                <p class="eyebrow">YOUR MONTH AT A GLANCE</p>
+                <h2>Monthly summary</h2>
+            </div>
+              <div class="month-picker" >
+                <button class="month-arrow" id="previousMonth" type="button" >‹</button>
+                <span id="selectedMonth">This month</span>
+                <button class="month-arrow" id="nextMonth" type="button" >›</button>
+            </div>
+            </div>
+            <div class="monthly-ss">
+                        <div class="monthly-st">
+                            <span class="monthly-st-l">Income</span>
+                            <strong class="monthly-income" id="monthlyIncome">₹0</strong>
+                        </div>
+                        <div class="monthly-st">
+                            <span class="monthly-st-l">Expenses</span>
+                            <strong class="monthly-expense" id="monthlyExpense">₹0</strong>
+                        </div>
+                    </div>
+                <div class="monthly-progress">
+                        <div class="progress-income" id="monthlyIncomeBar"></div>
+                        <div class="progress-expense" id="monthlyExpenseBar"></div>
+                    </div>
+                    
+                    <p class="monthly-caption" id="monthlyCaption">Add a transaction to see your monthly progress.</p>
+                </article>
+          
+                <article class="panel category-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">WHERE IT GOES</p>
+                            <h2>Spending by category</h2>
+                        </div>
+                        <span class="chart-period" id="chartPeriod">This month</span>
+                    </div>
+                    <div class="category-chart" id="categoryChart"></div>
+                </article>
+            </section>
+
+            
+             <section class="panel monthly-panel transactions-gap" id="transactions">
+                <div class="panel-heading ">
+                    <div>
+                        <p class="eyebrow">THE DETAILS</p>
+                        <h2>Recent transactions</h2>
+                    </div>
+                    <span class="eyebrow" id="transactionCount">0 transactions</span>
+                </div>
+
+                <div class="filters">
+                    <label class="select-wrap">
+                        
+                        <select id="typeFilter">
+                            <option value="all">All transactions</option>
+                            <option value="income">Income</option>
+                            <option value="expense">Expenses</option>
+                        </select>
+                    </label>
+                    <label class="select-wrap">
+                    
+                        <select id="categoryFilter">
+                            <option value="all"></option>
+                        </select>
+                    </label>
+                    <button class="clear-filters" id="clearFilters" type="button">Clear filters</button>
+                </div>
+
+                  <div class="transaction-table-wrap">
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">TRANSACTION</th>
+                                <th scope="col">CATEGORY</th>
+                                <th scope="col">DATE</th>
+                                <th scope="col" class="amount-heading">AMOUNT</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionList"></tbody>
+                    </table>
+                    <div class="empty-state" id="emptyState" hidden>
+                        
+                        <h3>No transactions yet</h3>
+                        <p>Add your first transaction and it’ll show up here.</p>
+                        <button class="button button-secondary" id="emptyAddButton" type="button">Add a transaction</button>
+                    </div>
+                </div>
+            </section>
+          </main>
+          </div>
+            <dialog class="transaction-dialog" id="transactionDialog" >
+        <form id="transactionForm" novalidate>
+            <div class="dialog-heading">
+                <div>
+                  
+                    <h2 id="dialogTitle">Add a transaction</h2>
+                </div>
+                <button class="dialog-close" id="closeDialog" type="button">×</button>
+            </div>
+
+            <div class="type-toggle">
+                <button class="type-button selected" type="button" data-type="expense">Expense</button>
+                <button class="type-button" type="button" data-type="income">Income</button>
+            </div>
+            <input id="transactionType" name="type" type="hidden" value="expense">
+
+            <label class="form-label" for="amount">Amount</label>
+            <div class="amount-input-wrap">
+                
+                <input id="amount" name="amount" type="number" min="0.01" step="0.01" placeholder="0.00" inputmode="decimal" required>
+            </div>
+            <p class="field-error" id="amountError" ></p>
+
+            <div class="form-row">
+                <div class="form-field">
+                    <label class="form-label" for="category">Category</label>
+                    <select id="category" name="category" required></select>
+                    <p class="field-error" id="categoryError" ></p>
+                </div>
+                <div class="form-field">
+                    <label class="form-label" for="date">Date</label>
+                    <input id="date" name="date" type="date" required>
+                    <p class="field-error" id="dateError" ></p>
+                </div>
+            </div>
+
+            <label class="form-label" for="description">Description</label>
+            <input id="description" name="description" type="text" maxlength="80" placeholder= description>
+            <p class="field-error" id="descriptionError"></p>
+
+            <p class="form-message" id="formMessage" role="alert"></p>
+            <div class="dialog-actions">
+                <button class="button button-secondary" id="cancelDialog" type="button">Cancel</button>
+                <button class="button button-primary" type="submit" id="saveTransaction">Save transaction</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
+
+            
+
+
